@@ -25,7 +25,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-5xl md:text-6xl font-bold">
-            Hi, I'm <span className="text-burgundy-600 dark:text-burgundy-400">Abdullah Yakub</span>
+            Hi, I&apos;m <span className="text-burgundy-600 dark:text-burgundy-400">Abdullah Yakub</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
             Computer Science Graduate & Web Developer
@@ -54,12 +54,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                I'm a Computer Science graduate with a passion for web development and problem-solving. 
+                I&apos;m a Computer Science graduate with a passion for web development and problem-solving. 
                 With experience in both frontend and backend technologies, I enjoy creating efficient, 
                 user-friendly applications that solve real-world problems.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                When I'm not coding, you can find me exploring new technologies and working on personal projects
+                When I&apos;m not coding, you can find me exploring new technologies and working on personal projects
                 that challenge my skills and creativity.
               </p>
             </div>
