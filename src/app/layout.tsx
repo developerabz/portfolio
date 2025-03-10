@@ -1,8 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import { Providers } from '@/components/Providers'
 
-const inter = Inter({ subsets: ['latin'] })
+const outfit = Outfit({ 
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Portfolio - Computer Science Graduate & Web Developer',
@@ -15,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-white text-gray-900 min-h-screen`}>
-        <Navbar />
-        <main className="container mx-auto px-4 pt-16">
-          {children}
-        </main>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${outfit.className} bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen`}>
+        <Providers>
+          <Navbar />
+          <main className="container mx-auto px-4 pt-16">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   )

@@ -17,9 +17,8 @@ html {
   scrollbar-width: none;  /* Firefox */
 }
 
-/* Ensure sections take up at least the viewport height */
+/* Section spacing */
 section {
-  min-height: 100vh;
   padding-top: 4rem;
   scroll-margin-top: 4rem;
 }
