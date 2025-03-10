@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation'
 import SkillCard from '@/components/SkillCard'
 import ProjectCard from '@/components/ProjectCard'
 import { skills } from '@/data/skills'
@@ -25,10 +26,34 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-5xl md:text-6xl font-bold">
-            Hi, I&apos;m <span className="text-burgundy-600 dark:text-burgundy-400">Abdullah Yakub</span>
+            <span>
+              <TypeAnimation
+                sequence={[
+                  'Hi, I am\u00A0',
+                  500
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={0}
+                className="inline-block"
+                cursor={false}
+              />
+              <TypeAnimation
+                sequence={[
+                  '',
+                  1500,
+                  'Abdullah Yakub'
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={0}
+                className="inline-block text-burgundy-600 dark:text-burgundy-400"
+                cursor={false}
+              />
+            </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Computer Science Graduate & Web Developer
+            Freelance Web Developer looking for full-time work
           </p>
           <div className="flex justify-center space-x-4">
             <a href="#projects" className="bg-burgundy-600 text-white px-6 py-3 rounded-lg hover:bg-burgundy-700 transition-colors">
